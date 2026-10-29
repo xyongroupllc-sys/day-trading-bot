@@ -22,8 +22,8 @@ Registra cada candidato en la base de Notion "📈 Day Trading — Señales" com
 Envía el boletín pre-apertura por Telegram usando Python urllib (NO curl) DIVIDIDO EN 3 MENSAJES SEPARADOS, en este orden:
 ```python
 python3 << 'PYEOF'
-import urllib.request, json
-BOT = '8808331974:AAEGvzaVbFWh6xoJubHA1lDuAhtVeCAo0JY'
+import urllib.request, json, os
+BOT = 'os.environ['TELEGRAM_BOT_TOKEN']'
 CHAT = '526766269'
 def tg(msg):
     data = json.dumps({'chat_id': CHAT, 'text': msg}).encode('utf-8')
