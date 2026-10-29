@@ -13,8 +13,8 @@ CUENTA ROBINHOOD: 737702357 (••••2357)
 FUNCIÓN TELEGRAM:
 ```python
 python3 << 'PYEOF'
-import urllib.request, json
-BOT = '8808331974:AAEGvzaVbFWh6xoJubHA1lDuAhtVeCAo0JY'
+import urllib.request, json, os
+BOT = 'os.environ['TELEGRAM_BOT_TOKEN']'
 CHAT = '526766269'
 def tg(msg):
     data = json.dumps({'chat_id': CHAT, 'text': msg}).encode('utf-8')
